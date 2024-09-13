@@ -6,7 +6,7 @@
 /*   By: abhudulo <abhudulo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/28 07:29:37 by abhudulo          #+#    #+#             */
-/*   Updated: 2024/06/28 10:57:51 by abhudulo         ###   ########.fr       */
+/*   Updated: 2024/09/13 02:04:55 by abhudulo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,39 +67,39 @@ void	free_args(char **args)
 	free(args);
 }
 
-// int	handle_argc_two(char **argv, char ***args, int *argc, int *i)
-// {
-// 	int	len;
+int	handle_argc_two(char **argv, char ***args, int *argc, int *i)
+{
+	int	len;
 
-// 	*args = ft_split(argv[1], ' ');
-// 	if (!(*args))
-// 		return (1);
-// 	len = 0;
-// 	while ((*args)[len])
-// 		len++;
-// 	*argc = len + 1;
-// 	*i = 0;
-// 	return (0);
-// }
+	*args = ft_split(argv[1], ' ');
+	if (!(*args))
+		return (1);
+	len = 0;
+	while ((*args)[len])
+		len++;
+	*argc = len + 1;
+	*i = 0;
+	return (0);
+}
 
-// int	main(int argc, char **argv)
-// {
-// 	char	**args;
-// 	int		len;
-// 	int		i;
+int	main(int argc, char **argv)
+{
+	char	**args;
+	int		len;
+	int		i;
 
-// 	if (argc < 2)
-// 		return (0);
-// 	args = argv;
-// 	len = 0;
-// 	i = 1;
-// 	if (argc == 2)
-// 	{
-// 		if (handle_argc_two(argv, &args, &argc, &i))
-// 			return (1);
-// 	}
-// 	ft_init(argc, args, i, len);
-// 	if (argc == 2)
-// 		free_args(args);
-// 	return (0);
-// }
+	if (argc < 2)
+		return (0);
+	args = argv;
+	len = 0;
+	i = 1;
+	if (argc == 2)
+	{
+		if (handle_argc_two(argv, &args, &argc, &i))
+			return (1);
+	}
+	ft_init(argc, args, i, len);
+	if (argc == 2)
+		free_args(args);
+	return (0);
+}
