@@ -4,7 +4,7 @@
 # 🧑‍💻 **push_swap**  
 ![Push Swap](https://img.shields.io/badge/Sorting-Algorithm-Blue?style=for-the-badge) ![Language](https://img.shields.io/badge/C-Language-orange?style=for-the-badge)
 
-![Project Banner](https://i.imgur.com/qGImAuG.png)
+![Project Banner](https://i.imgur.com/32xnsHO.png)
 
 </div>
 
